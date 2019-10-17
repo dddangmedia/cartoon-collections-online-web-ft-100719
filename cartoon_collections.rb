@@ -26,15 +26,8 @@ end
 
 def find_the_cheese(arr)
   cheese_types = ["cheddar", "gouda", "camebert"]
-  counter = 0 
-  while counter < arr.length 
-    if yield(arr[counter]).include?(cheese_types)
-      arr[counter]
-    else
-      counter += 1 
-    end
-    break
-  end
-  arr[counter]
+  
+  arr.find do |food|
+    food.include?()
 end
 
